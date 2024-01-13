@@ -1,0 +1,470 @@
+body {
+
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Full height */
+    margin: 0; /* Reset default margin */
+    
+    background-color: #FCFCFC;
+    height: 100vh;
+    overflow: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow-y: auto;
+}
+
+.content {
+    flex: 1; /* Makes the content take up all available space, pushing the footer down */
+}
+/* Apply styles for screens smaller than 768 pixels */
+@media (max-width: 840px) {
+    .left-pic {
+      display: none;
+    }
+    .right-pic {
+        display: none;
+    }
+  }
+
+
+
+
+
+.navbar {
+    background-color: #FCFCFC; /* Sets the background to white */
+    overflow: hidden;
+    text-align: center;
+    margin-top: 25px;
+}
+
+.navbar a {
+    display: inline-block;
+    color: #000000; /* Sets the text color to dark gray */
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 100;
+    
+}
+.navbar a:hover {
+    color: #cc00ff;
+    font-weight: bold;
+}
+
+
+
+
+
+
+.button-container {
+    display: flex;
+    justify-content: center; /* Horizontally center the buttons */
+    gap: 20px; /* Gap between the buttons */
+}
+
+button {
+    width: 150px; /* Assign a fixed width, adjust as needed */
+    height: 50px; /* Assign a fixed height, adjust as needed */
+    margin-top: 10px;
+    padding: 10px;
+    border: none;
+    background-color: #21543F;
+    color: white;
+    cursor: pointer;
+    border-radius: 50px;
+    display: flex;         /* Make the button a flex container */
+    align-items: center;   /* Vertically center the text/link */
+    justify-content: center; /* Horizontally center the text/link */
+    font-size: 14px;
+    
+}
+
+button a {
+    color: white;
+    text-decoration: none;
+}
+
+button:hover {
+    background-color: #7f109a;
+}
+
+
+
+/* CSS */
+.button-19 {
+  appearance: button;
+  background-color: #cc00ff83;
+  border: solid transparent;
+  border-radius: 16px;
+  border-width: 0 0 4px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: din-round,sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: .8px;
+  line-height: 20px;
+  margin-top: 20px;
+  outline: none;
+  overflow: visible;
+  padding: 13px 16px;
+  text-align: center;
+  text-transform: uppercase;
+  touch-action: manipulation;
+  transform: translateZ(0);
+  transition: filter .2s;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+  width: 180px;
+}
+
+.button-19:after {
+  background-clip: padding-box;
+  background-color: #cc00ff;
+  border: solid transparent;
+  border-radius: 16px;
+  border-width: 0 0 4px;
+  bottom: -4px;
+  content: "";
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: -1;
+}
+
+.button-19:main,
+.button-19:focus {
+  user-select: auto;
+}
+
+.button-19:hover:not(:disabled) {
+  filter: brightness(1.1);
+  -webkit-filter: brightness(1.1);
+}
+
+.button-19:disabled {
+  cursor: auto;
+}
+
+
+
+
+
+
+
+
+.home-title {
+    text-align: center;
+    color: #21543F;
+    margin-top: 100px;
+    font-size: 70px;
+    
+    background: linear-gradient(to right, #cc00ff, #007BFF);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    
+}
+
+.home-description {
+    text-align: center;
+    position: relative;
+    
+    max-width: 600px;
+    max-height: 300px;
+    overflow: auto;
+    font-size: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #7e109a;
+}
+
+
+
+
+/* Styling for the first background image */
+.left-pic {
+    background-image: url('/static/images/left-pic.png');
+    position: fixed;
+    background-size: cover; /* To cover the div entirely */
+    background-repeat: no-repeat;
+    background-position: center;
+    
+    top: 45vh;  /* Use vh for relative vertical positioning */
+    left: 2vw;  /* Use vw for relative horizontal positioning */
+    
+    width: 25vw;  /* 25% of viewport's width */
+    height: 25vw;  /* Keeping it equal to width for a square shape. Adjust if your image has a different aspect ratio */
+    
+    z-index: -1;  /* This ensures the image stays behind your content */
+}
+
+/* Styling for the second background image */
+.right-pic {
+    background-image: url('/static/images/right-pic.png');
+    position: fixed;
+    background-size: cover; /* To cover the div entirely */
+    background-repeat: no-repeat;
+    background-position: center;
+    
+    top: 50vh;  /* Use vh for relative vertical positioning */
+    right: 4vw;  /* Use vw for relative horizontal positioning */
+    
+    width: 21vw;  /* 25% of viewport's width */
+    height: 21vw;  /* Keeping it equal to width for a square shape. Adjust if your image has a different aspect ratio */
+    
+    z-index: -1;  /* This ensures the image stays behind your content */
+}
+ 
+
+
+
+
+.board-title {
+    text-align: center;
+    color: #21543F;
+    margin-top: 30px;
+    font-size: 40px;
+    
+    background: linear-gradient(to right, #cc00ff, #007BFF);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+/* Container for all board members */
+.board-members {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+/* Individual board member container */
+.member {
+    border: 1px solid #cccccc;
+    padding: 10px;
+    width: 200px;
+    height: 330px;
+    text-align: center;
+    position: relative;
+}
+
+/* Member image styling */
+.member img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 0 auto;
+}
+
+/* Member name styling */
+.member-name {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* Member title styling */
+.member-title {
+    color: #777;
+    font-size: 0.9em;
+    
+}
+
+/* Member description styling */
+.member-desc {
+    margin-top: 5px;
+    font-size: 0.8em;
+    text-align: left;
+    
+}
+
+.pronoun-box {
+    background-color: #20a8d6;
+    padding: 3px 8px;
+    font-size: 0.7em;
+    border-radius: 3px;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #fff;
+    
+}
+.class-year-box {
+    background-color: #1bd3a5;
+    padding: 3px 8px;
+    font-size: 0.7em;
+    border-radius: 3px;
+    position: absolute;
+    bottom: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #fff;
+    
+}
+
+.home-town-box {
+    background-color: #dd1de7;
+    padding: 3px 8px;
+    font-size: 0.7em;
+    border-radius: 3px;
+    position: absolute;
+    bottom: 35px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #fff;
+    
+}
+
+
+
+
+
+.schedule-title {
+    text-align: center;
+    color: #21543F;
+    margin-top: 30px;
+    font-size: 40px;
+    
+    background: linear-gradient(to right, #cc00ff, #007BFF);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+
+
+
+
+.contact-title {
+    text-align: center;
+    color: #21543F;
+    margin-top: 30px;
+    font-size: 40px;
+    
+    background: linear-gradient(to right, #cc00ff, #007BFF);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+form {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+form div {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"], input[type="email"], textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #cc00ff;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+input[type="text"]:focus, input[type="email"]:focus, textarea:focus {
+    border-color: #007BFF;
+    outline: none;
+}
+
+textarea {
+    min-height: 150px;
+}
+
+input[type="submit"] {
+    display: block;
+    border: none;
+    background-color: #21543F;
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
+    margin-top: 10px;
+    border-radius: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 150px; /* Assign a fixed width, adjust as needed */
+    height: 50px; /* Assign a fixed height, adjust as needed */
+    margin-top: 10px;
+    padding: 10px;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+
+
+
+
+
+
+section {
+  padding: 1rem;
+  margin: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+h2 {
+  background-color: #f2f2f2;
+  padding: 0.5rem;
+  color: #cc00ff;
+}
+
+.handle {
+  font-weight: bold;
+}
+
+a {
+  color: #007BFF;
+  text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+.footer {
+    background-color: #cc00ff;
+    color: white;
+    padding: 5px;
+    width: 100%;
+    position: relative; /* Use fixed position to keep the footer at the bottom */
+    left: 0;
+    bottom: 0;
+    text-align: center; /* Center the content horizontally */
+
+}

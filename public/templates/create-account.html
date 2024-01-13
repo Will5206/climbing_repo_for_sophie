@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+
+    <script src="https://www.gstatic.com/firebasejs/9.1.2/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.1.2/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.1.2/firebase-firestore-compat.js"></script>
+    
+    <script src="https://www.gstatic.com/firebasejs/9.1.2/firebase-analytics-compat.js"></script>
+
+    <title>Climbing Club</title>
+</head>
+<body>
+
+    <div class="navbar">
+        <a href="/">HOME</a>
+        <a href="/info">CLUB INFO</a>
+        <a href="/schedule">SCHEDULE</a>
+        <a href="/events">EVENTS</a>
+        <a href="/board">BOARD</a>
+        <a href="/contact-us">CONTACT US</a>
+    </div>
+    
+    <h1 class="home-title">Create Account</h1>
+
+    <form id="registrationForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+        
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required><br><br>
+        <input type="submit" value="Register" class="button-19" role="button">
+    </form>
+
+    <script src="{{ url_for('static', filename='javascript.js') }}"></script>
+
+</body>
+</html>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <title>TU Climbing Club</title>
+</head>
+
+<body>
+    <div class="content">
+    <div class="navbar">
+        <a href="public/">HOME</a>
+        <a href="/info">CLUB INFO</a>
+        <a href="/schedule">SCHEDULE</a>
+        <a href="/events">EVENTS</a>
+        <a href="/board">BOARD</a>
+        <a href="/contact-us">CONTACT US</a>
+    </div>
+    
+    <h1 class="board-title">MEET OUR BOARD</h1>
+
+
+    <div class="board-members">
+        <!-- Board Member -->
+        <div class="member">
+            <img src="{{ url_for('static', filename='images/dara.png') }}" alt="Member 1 Image">
+            <div class="member-name">Dara Mandell</div>
+            <div class="member-title">President</div>
+            <div class="member-desc">Major: Environmental Biology <br> • Quarterback of the D1 flag football team <br> • Quarterback side attack</div>
+            <div class="pronoun-box">She/They</div>
+            <div class="home-town-box">Ann Arbor, MI</div>
+            <div class="class-year-box">Class of 2025</div>
+        </div>
+    
+
+        <div class="member">
+            <img src="{{ url_for('static', filename='images/kelly.png') }}" alt="Member 1 Image">
+            <div class="member-name">Kelly Tammen</div>
+            <div class="member-title">Vice President</div>
+            <div class="member-desc">Major: Cell and Molecular Biology <br> Major: Neuroscience <br> Major: Studio Art <br> • TUSTEP co-raiser <br> • WTUL program director <br> • The better library printer guru</div>
+            <div class="pronoun-box">She/They</div>
+            <div class="class-year-box">Class of 2024</div>
+            <div class="home-town-box">Bremerton, WA</div>
+        </div>
+
+        <div class="member">
+            <img src="{{ url_for('static', filename='images/noah.png') }}" alt="Member 1 Image">
+            <div class="member-name">Noah Sacher</div>
+            <div class="member-title">Treasurer</div>
+            <div class="member-desc">Major: Management <br> Major: Psychology <br> • Volunteering at community gardens <br> • Scaler of scaffolding</div>
+            <div class="pronoun-box">He/Him/His</div>
+            <div class="class-year-box">Class of 2025</div>
+            <div class="home-town-box">New York City, NY</div>
+        </div>
+
+        <div class="member">
+            <img src="{{ url_for('static', filename='images/cat.png') }}" alt="Member 1 Image">
+            <div class="member-name">Cat MacConnell</div>
+            <div class="member-title">Co-Secretary</div>
+            <div class="member-desc">Major: Public Health <br> Minor: SLAM <br>• Health equity fellowship <br> • Tulane Consulting Group <br> • Phi Mu</div>
+            <div class="pronoun-box">She/Her/Hers</div>
+            <div class="class-year-box">Class of 2026</div>
+            <div class="home-town-box">Houston, TX</div>
+        </div>
+
+        <div class="member">
+            <img src="{{ url_for('static', filename='images/sophie.png') }}" alt="Member 1 Image">
+            <div class="member-name">Sophie Leff</div>
+            <div class="member-title">Co-Secretary</div>
+            <div class="member-desc">Major: Computer Science <br> Major: Italian <br> Minor: Math <br> • TUSTEP co-raiser <br> • APO <br> • Cat lover</div>
+            <div class="pronoun-box">She/Her/Hers</div>
+            <div class="class-year-box">Class of 2026</div>
+            <div class="home-town-box">Menlo Park, CA</div>
+        </div>
+
+        <div class="member">
+            <img src="{{ url_for('static', filename='images/neha.png') }}" alt="Member 1 Image">
+            <div class="member-name">Neha Chand</div>
+            <div class="member-title">Co-Public Relations</div>
+            <div class="member-desc">Major: Cell and Molecular Biology <br> • TUSTEP co-raiser <br> • Model UN <br> • Professional influencer</div>
+            <div class="pronoun-box">She/Her/Hers</div>
+            <div class="class-year-box">Class of 2026</div>
+            <div class="home-town-box">Frisco, TX</div>
+        </div>
+
+        <div class="member">
+            <img src="{{ url_for('static', filename='images/carina.png') }}" alt="Member 1 Image">
+            <div class="member-name">Carina Kroff</div>
+            <div class="member-title">Co-Public Relations</div>
+            <div class="member-desc">Major: International Relations <br> Major: Dance <br> Minor: Spanish <br> • German club <br> • SARC for summer abroad in Dublin <br> • ALD • Split enthusiast</div>
+            <div class="pronoun-box">She/Her/Hers</div>
+            <div class="class-year-box">Class of 2025</div>
+            <div class="home-town-box">Los Angeles, CA</div>
+        </div>
+
+        <div class="member">
+            <img src="{{ url_for('static', filename='images/khang.png') }}" alt="Member 1 Image">
+            <div class="member-name">Khang Le</div>
+            <div class="member-title">Co-Team Captain</div>
+            <div class="member-desc">Major: International Relations <br> • Library printer guru</div>
+            <div class="pronoun-box">He/Him/His</div>
+            <div class="class-year-box">Class of 2026</div>
+            <div class="home-town-box">Saigon, Vietnam</div>
+        </div>
+
+        <div class="member">
+            <img src="{{ url_for('static', filename='images/colin.png') }}" alt="Member 1 Image">
+            <div class="member-name">Colin Foley</div>
+            <div class="member-title">Co-Team Captain</div>
+            <div class="member-desc">Major: Psychology <br> Major: English <br> • Unscripted Improv <br> • APO <br> • Newcomb Daycare <br> • Hustling and grinding like a badass visionary</div>
+            <div class="pronoun-box">They/Them/Theirs</div>
+            <div class="class-year-box">Class of 2024</div>
+            <div class="home-town-box">Newton, MA</div>
+        </div>
+    
+        <div class="member">
+            <img src="{{ url_for('static', filename='images/will.jpg') }}" alt="Member 1 Image">
+            <div class="member-name">Will Silver Wagman</div>
+            <div class="member-title">Full-Stack Web Dev</div>
+            <div class="member-desc">Major: Psychology <br> • AI Researcher <br> • Psychology Researcher <br> • Software dev <br> • Climbing Goals: V10 & 5.14TR <br> • Loves Santa Cruz, CA</div>
+            <div class="pronoun-box">He/Him/His</div>
+            <div class="class-year-box">Class of 2023</div>
+            <div class="home-town-box">Palo Alto, CA</div>
+        </div>
+    </div>
+    <div>
+        <br>
+    </div>
+    <footer class="footer">
+        <p>Copyright © 2023 Will Silver Wagman</p>
+    </footer>
+</body>
+</html>
